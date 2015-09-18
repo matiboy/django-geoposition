@@ -145,6 +145,7 @@ if (jQuery != undefined) {
             
 
             map = new google.maps.Map($mapContainer.get(0), mapOptions);
+            window.djangogeoposition = map;
             markerOptions = $.extend({}, markerDefaults, markerCustomOptions, {
                 'map': map
             });
